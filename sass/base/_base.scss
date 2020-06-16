@@ -1,0 +1,208 @@
+@import "../abstracts/variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+  padding: 3.5rem;
+}
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary,
+      $color-primary-light
+    ),
+    url(../img/header.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+  position: relative;
+
+  &_text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 7rem;
+  }
+
+  &--sub {
+    padding-top: 0;
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}
+
+.links {
+  display: block;
+  text-align: center;
+  &_icon {
+    color: $color-gray;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+  }
+}
+
+.skills {
+  background-color: $color-gray;
+  padding: 15rem 0;
+  margin-top: -25vh;
+  text-align: center;
+  clip-path: polygon(50% 20%, 100% 0, 100% 81.5%, 50% 100%, 0 81.5%, 0 0);
+
+  &_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0 20rem;
+
+    &-item {
+      background-color: $color-primary;
+      color: white;
+      margin: 0.5rem;
+      padding: 0;
+      &-heading {
+        display: block;
+        font-size: 2rem;
+      }
+
+      &-icon {
+        display: block;
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.heading_secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-light
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.projects {
+  padding: 15rem 0;
+  text-align: center;
+  margin-top: -17.2vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-light
+  );
+  clip-path: polygon(50% 9.5%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+
+  &_grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 0 20rem;
+
+    &-item {
+      border-radius: 2px;
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: $color-gray;
+      margin: 1rem;
+      position: relative;
+      &-3 {
+        margin-bottom: 8rem;
+      }
+      &-heading {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-primary;
+        text-align: left;
+        margin: 2rem;
+
+        p {
+          margin-right: 0;
+        }
+      }
+
+      &-project {
+        ion-icon {
+          font-size: 20rem;
+          text-align: center;
+          margin-right: 5rem;
+        }
+      }
+
+      .btn-project {
+        position: absolute;
+        top: 15rem;
+        left: 2rem;
+        padding-bottom: 1rem;
+
+        &_link:link,
+        &_link:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: $color-primary;
+          color: $color-gray;
+          padding: 2px 1.2rem;
+          border-radius: 2.1rem;
+          margin-left: 0.5rem;
+          display: inline-block;
+        }
+
+        &_link:hover {
+          transform: translateY(-2px);
+        }
+
+        &_link:active {
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+}
+.heading-project {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-gray-dark, $color-gray);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contact-me {
+  background-color: $color-gray;
+  padding: 20rem 0;
+  margin-top: -32vh;
+  text-align: center;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}

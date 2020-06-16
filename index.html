@@ -8,24 +8,155 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="" type="image/png" />
     <title>Isra's Portfolio</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header_text-box">
         <div class="heading-primary">
           <span class="heading-primary--main">ISRA OSMAN</span>
-          <span class="heading-primary--sub">Frontend Developer</span>
-        </div>
+          <span class="heading-primary--sub"
+            >Frontend Developer
+            <span class="links">
+              <a
+                class="links_icon"
+                href="https://www.linkedin.com/in/isra-osman-16123568/"
+                ><ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a class="links_icon" href="https://github.com/IsraOsman"
+                ><ion-icon name="logo-github"></ion-icon
+              ></a>
+              <ion-icon
+                class="links_icon"
+                name="document-text-outline"
+              ></ion-icon>
+            </span>
+          </span>
 
-        <p class="header_text"></p>
+          <p class="text"></p>
+        </div>
       </div>
     </header>
 
-    <section class="skills">
-      HTML CSS SCSS Javascript Angular React
-    </section>
+    <main>
+      <section class="skills">
+        <h2 class="heading_secondary">SKILLS</h2>
+
+        <div class="skills_grid">
+          <div class="skills_grid-item skills_grid-1">
+            <span class="skills_grid-item-heading">HTML</span>
+            <span class="skills_grid-item-icon"
+              ><ion-icon name="logo-html5"></ion-icon
+            ></span>
+          </div>
+          <div class="skills_grid-item skills_grid-2">
+            <span class="skills_grid-item-heading">CSS</span>
+            <span class="skills_grid-item-icon"
+              ><ion-icon name="logo-css3"></ion-icon
+            ></span>
+          </div>
+          <div class="skills_grid-item skills_grid-3">
+            <span class="skills_grid-item-heading">Sass</span>
+            <span class="skills_grid-item-icon"
+              ><ion-icon name="logo-sass"></ion-icon
+            ></span>
+          </div>
+          <div class="skills_grid-item skills_grid-4">
+            <span class="skills_grid-item-heading">Javascript</span>
+            <span class="skills_grid-item-icon"
+              ><ion-icon name="logo-javascript"></ion-icon
+            ></span>
+          </div>
+          <div class="skills_grid-item skills_grid-5">
+            <span class="skills_grid-item-heading">React js</span>
+            <span class="skills_grid-item-icon"
+              ><ion-icon name="logo-react"></ion-icon
+            ></span>
+          </div>
+          <div class="skills_grid-item skills_grid-6">
+            <span class="skills_grid-item-heading">NODE js</span>
+            <span class="skills_grid-item-icon"
+              ><ion-icon name="logo-nodejs"></ion-icon
+            ></span>
+          </div>
+          <div class="skills_grid-item skills_grid-7">
+            <span class="skills_grid-item-heading">Express js</span>
+          </div>
+          <div class="skills_grid-item skills_grid-8"></div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2 class="heading_secondary heading-project">Projects</h2>
+
+        <div class="projects_grid">
+          <div class="projects_grid-item projects_grid-item-1">
+            <span class="projects_grid-item-heading">
+              <h4>Chicago Dice Game</h4>
+              <p class="projects_discription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                alias optio nesciunt suscipit enim.
+              </p>
+              <div class="btn-project">
+                <a href="#" class="btn-project_link">Live</a>
+                <a href="#" class="btn-project_link">Code</a>
+              </div>
+            </span>
+            <span class="projects_grid-item-project"
+              ><ion-icon name="laptop-outline"></ion-icon
+            ></span>
+          </div>
+
+          <div class="projects_grid-item projects_grid-item-2">
+            <span class="projects_grid-item-heading">
+              <h4>Twitter Showcase</h4>
+              <p class="projects_discription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                alias optio nesciunt suscipit enim.
+              </p>
+              <div class="btn-project">
+                <a href="#" class="btn-project_link">Live</a>
+                <a href="#" class="btn-project_link">Code</a>
+              </div>
+            </span>
+            <span class="projects_grid-item-project"
+              ><ion-icon name="laptop-outline"></ion-icon
+            ></span>
+          </div>
+
+          <div class="projects_grid-item projects_grid-item-3">
+            <span class="projects_grid-item-heading">
+              <h4>Coming</h4>
+              <p class="projects_discription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                alias optio nesciunt suscipit enim.
+              </p>
+              <div class="btn-project">
+                <a href="#" class="btn-project_link">Live</a>
+                <a href="#" class="btn-project_link">Code</a>
+              </div>
+            </span>
+            <span class="projects_grid-item-project"
+              ><ion-icon name="laptop-outline"></ion-icon
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-me">
+        <h2 heading-secondary>Contact me</h2>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>
