@@ -11,10 +11,10 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #dac9c9;
-  padding: 3.5rem; }
+  padding: 3rem; }
 
 .header {
-  height: 90vh;
+  height: 80vh;
   background-image: linear-gradient(to right bottom, #9e2855c7, #a07990c4), url(../img/header.jpg);
   background-size: cover;
   background-position: top;
@@ -43,6 +43,12 @@ body {
     font-weight: 400;
     letter-spacing: 3px;
     text-align: center; }
+  .heading-primary_text {
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: auto;
+    text-align: center;
+    max-width: 75%; }
 
 .links {
   display: block;
@@ -61,12 +67,11 @@ body {
   clip-path: polygon(50% 20%, 100% 0, 100% 81.5%, 50% 100%, 0 81.5%, 0 0); }
   .skills_grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     padding: 0 20rem; }
     .skills_grid-item {
-      background-color: #9e2855c7;
-      color: white;
-      margin: 0.5rem;
+      color: #9e2855c7;
+      margin: 1rem;
       padding: 0; }
       .skills_grid-item-heading {
         display: block;
@@ -111,10 +116,13 @@ body {
         margin: 2rem; }
         .projects_grid-item-heading p {
           margin-right: 0; }
-      .projects_grid-item-project ion-icon {
+      .projects_grid-item-project {
         font-size: 20rem;
         text-align: center;
         margin-right: 5rem; }
+        .projects_grid-item-project-1 {
+          background-image: url(../img/game.jpg);
+          background-size: 15rem; }
       .projects_grid-item .btn-project {
         position: absolute;
         top: 15rem;
