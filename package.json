@@ -4,7 +4,7 @@
   "description": "Portofolio page ",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node index.js"
+    "start": "node index.js"
   },
   "author": "Isra",
   "license": "ISC",
