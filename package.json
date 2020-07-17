@@ -8,8 +8,8 @@
     "node": "10.15.3"
   },
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss",
-    "start": "node index.js"
+    "start": "node index.js",
+    "compile:sass": "node-sass sass/main.scss"
   },
   "author": "Isra",
   "license": "ISC",
