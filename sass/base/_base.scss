@@ -67,7 +67,7 @@ body {
     letter-spacing: 4px;
     line-height: 7rem;
     margin-top: 10rem;
-    @include respond(phone) {
+    @include respond(tab-port) {
       font-size: 4rem;
     }
   }
@@ -79,6 +79,10 @@ body {
     font-weight: 400;
     letter-spacing: 1px;
     text-align: center;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 
   &_text {
@@ -133,23 +137,27 @@ body {
 .skills {
   background-color: #f1e9e9;
   padding: 12rem 0;
-  margin-top: -24vh;
+  margin-top: -25vh;
   text-align: center;
   position: relative;
   z-index: 2;
   clip-path: polygon(50% 20vh, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+
   @include respond(tab-port) {
     clip-path: polygon(50% 20vh, 100% 0, 100% 81%, 50% 100%, 0 81%, 0 0);
   }
 
   &_grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 0 30rem;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0 20rem;
     margin-top: 1rem;
-    @include respond(tab-port) {
+    /*@include respond(tab-port) {
       padding: 1rem 8rem;
-      grid-template-columns: auto auto auto;
+    }*/
+
+    @include respond(phone) {
+      padding: 1rem 5rem;
     }
 
     &-item {
@@ -159,6 +167,9 @@ body {
       border-radius: 2px;
       margin: 1rem;
       padding: 0;
+      @include respond(phone) {
+        margin: 3px;
+      }
 
       &:hover {
         transform: translateY(-2px);
@@ -172,7 +183,7 @@ body {
 
       &-icon {
         display: block;
-        font-size: 4rem;
+        font-size: 3rem;
       }
     }
   }
@@ -201,9 +212,9 @@ body {
 }
 
 .projects {
-  padding: 13rem 0;
+  padding: 12rem 0;
   text-align: center;
-  margin-top: -22vh;
+  margin-top: -23vh;
   position: relative;
   z-index: 1;
   background-image: linear-gradient(
@@ -227,8 +238,13 @@ body {
       box-shadow: 0 2px 2px $color-primary-light,
         0 2px 2px 0 $color-primary-light;
       margin: 1rem;
-      height: 28rem;
+      height: auto;
       position: relative;
+      @include respond(tab-port) {
+        grid-template-rows: auto auto;
+        height: auto;
+        display: block;
+      }
 
       &-3 {
         margin-bottom: 6rem;
@@ -256,21 +272,27 @@ body {
 
         img {
           max-width: 40rem;
-          box-shadow: 0 4px 4px 0 $color-primary, 0 4px 4px 0 $color-primary;
+          box-shadow: 0 2px 2px 0 $color-primary, 0 2px 2px 0 $color-primary;
           display: block;
           float: right;
           height: auto;
           margin: 2rem;
+          @include respond(tab-port) {
+            max-width: 98%;
+            margin: auto;
+            padding: 1px;
+            float: none;
+          }
         }
       }
 
       .btn-project {
-        position: absolute;
-        top: 22rem;
-        left: 1.5rem;
         padding-bottom: 1rem;
         font-size: 2rem;
-
+        float: left;
+        position: absolute;
+        top: 80%;
+        left: 1rem;
         &_link:link,
         &_link:visited {
           text-transform: uppercase;
@@ -310,7 +332,7 @@ body {
   padding-bottom: 10rem;
   position: relative;
   z-index: 2;
-  margin-top: -17.5vh;
+  margin-top: -19.5vh;
   text-align: center;
   clip-path: polygon(50% 30%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 
