@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Portofolio page ",
   "main": "index.js",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.3"
+  },
   "scripts": {
+    "compile:sass": "node-sass sass/main.scss",
     "start": "node index.js"
   },
   "author": "Isra",
