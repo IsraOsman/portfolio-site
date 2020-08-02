@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+
   @include respond(tab-land) {
     font-size: 56.25%;
   }
@@ -68,6 +69,10 @@ body {
     line-height: 7rem;
     margin-top: 10rem;
     @include respond(tab-port) {
+      font-size: 5rem;
+    }
+
+    @include respond(phone) {
       font-size: 4rem;
     }
   }
@@ -152,9 +157,9 @@ body {
     grid-template-columns: auto auto auto auto auto;
     padding: 0 20rem;
     margin-top: 1rem;
-    /*@include respond(tab-port) {
-      padding: 1rem 8rem;
-    }*/
+    @include respond(tab-port) {
+      padding: 0 8rem;
+    }
 
     @include respond(phone) {
       padding: 1rem 5rem;
@@ -167,8 +172,8 @@ body {
       border-radius: 2px;
       margin: 1rem;
       padding: 0;
-      @include respond(phone) {
-        margin: 3px;
+      @include respond(tab-port) {
+        margin: 4px;
       }
 
       &:hover {
@@ -195,6 +200,7 @@ body {
   font-weight: 700;
   @include respond(tab-port) {
     font-size: 3rem;
+    margin-top: 4rem;
   }
 
   @include respond(phone) {
@@ -205,7 +211,7 @@ body {
     $color-primary,
     $color-primary-light
   );
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -264,6 +270,7 @@ body {
         color: $color-black;
         text-align: left;
         margin-left: 1.5rem;
+        height: 55%;
       }
 
       &-project {
@@ -278,10 +285,13 @@ body {
           height: auto;
           margin: 2rem;
           @include respond(tab-port) {
-            max-width: 98%;
+            max-width: 100%;
             margin: auto;
-            padding: 1px;
-            float: none;
+          }
+
+          @include respond(phone) {
+            max-width: 100%;
+            margin: auto;
           }
         }
       }
@@ -290,9 +300,9 @@ body {
         padding-bottom: 1rem;
         font-size: 2rem;
         float: left;
-        position: absolute;
-        top: 80%;
-        left: 1rem;
+        display: grid;
+        grid-template-columns: auto auto;
+
         &_link:link,
         &_link:visited {
           text-transform: uppercase;
@@ -324,6 +334,11 @@ body {
   background-image: linear-gradient(to right, $color-gray-dark, $color-gray);
   -webkit-background-clip: text;
   color: transparent;
+  margin-top: 4rem;
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
 }
 
 .contact-me {
