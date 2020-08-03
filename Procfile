@@ -1,1 +1,1 @@
-web:npm run build:css
+web:npm run start
