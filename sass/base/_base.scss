@@ -290,6 +290,10 @@ body {
     grid-template-rows: auto auto auto;
     padding: 0 10rem;
     margin-top: 1rem;
+
+    @include respond(phone){
+      padding: 0 5rem;
+    }
     
     &-item {
       border-radius: 2px;
@@ -303,9 +307,6 @@ body {
       margin: 1rem;
       height: auto;
       position: relative;
-      @include respond(phone){
-        padding: 0 5rem;
-      }
   
       @include respond(tab-port) {
         grid-template-rows: auto auto;
