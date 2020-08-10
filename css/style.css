@@ -192,6 +192,9 @@ body {
     grid-template-rows: auto auto auto;
     padding: 0 10rem;
     margin-top: 1rem; }
+    @media (max-width: 37.5em) {
+      .projects_grid {
+        padding: 0 5rem; } }
     .projects_grid-item {
       border-radius: 2px;
       display: grid;
@@ -202,9 +205,6 @@ body {
       margin: 1rem;
       height: auto;
       position: relative; }
-      @media (max-width: 37.5em) {
-        .projects_grid-item {
-          padding: 0 5rem; } }
       @media (max-width: 56.25em) {
         .projects_grid-item {
           grid-template-rows: auto auto;
