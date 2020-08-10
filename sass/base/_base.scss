@@ -1,0 +1,423 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+  @include respond(tab-port) {
+    padding: 0rem;
+  }
+  padding: 3rem;
+}
+
+.header {
+  height: 96vh;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary,
+      $color-primary-light
+    ),
+    url(../img/header.jpg);
+  background-size: cover;
+  background-position: top;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 78vh,
+      50% 100%,
+      0% 78vh,
+      0 0
+    );
+    clip-path: polygon(50% 0%, 100% 0, 100% 78vh, 50% 100%, 0% 78vh, 0 0);
+  }
+
+  position: relative;
+
+  &_text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+}
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 7rem;
+    margin-top: 10rem;
+    @include respond(tab-port) {
+      font-size: 5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+  }
+
+  &--sub {
+    padding-top: 0;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+  }
+
+  &_text {
+    font-size: 2.5rem;
+    text-transform: none;
+    font-weight: 400;
+    margin: auto;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  &-btn {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 2rem;
+    background-color: $color-gray;
+    font-weight: 400;
+    margin-top: 1.5rem;
+
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.5rem 2.7rem;
+      border-radius: 3rem;
+      display: inline-block;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      -webkit-transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      -webkit-transform: translateY(-1px);
+    }
+  }
+}
+
+.links {
+  display: block;
+  text-align: center;
+
+  &_icon {
+    color: $color-gray;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+  }
+}
+
+.skills {
+  background-color: #f1e9e9;
+  padding: 12rem 0;
+  margin-top: -25vh;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    clip-path: polygon(50% 20vh, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    -webkit-clip-path: polygon(
+      50% 20vh,
+      100% 0,
+      100% 80%,
+      50% 100%,
+      0 80%,
+      0 0
+    );
+  }
+
+  @include respond(tab-port) {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(50% 20vh, 100% 0, 100% 81%, 50% 100%, 0 81%, 0 0);
+      -webkit-clip-path: polygon(
+        50% 20vh,
+        100% 0,
+        100% 81%,
+        50% 100%,
+        0 81%,
+        0 0
+      );
+    }
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0 20rem;
+    margin-top: 1rem;
+    @include respond(tab-port) {
+      padding: 0 8rem;
+    }
+
+    @include respond(phone) {
+      padding: 1rem 5rem;
+    }
+
+    &-item {
+      background-color: $color-primary-1;
+      box-shadow: 0 2px 2px 0 $color-primary, 0 2px 2px 0 $color-primary;
+      color: $color-gray;
+      border-radius: 2px;
+      margin: 1rem;
+      padding: 0;
+      @include respond(tab-port) {
+        margin: 4px;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+      }
+
+      &-heading {
+        display: block;
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+
+      &-icon {
+        display: block;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.heading_secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include respond(tab-port) {
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-light
+  );
+  margin-top: 2.5rem;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.projects {
+  padding: 12rem 0;
+  text-align: center;
+  margin-top: -23vh;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-light
+  );
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 0 10rem;
+    margin-top: 1rem;
+
+    &-item {
+      border-radius: 2px;
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: $color-gray;
+      box-shadow: 0 2px 2px $color-primary-light,
+        0 2px 2px 0 $color-primary-light;
+      -webkit-box-shadow: 0 2px 2px $color-primary-light,
+        0 2px 2px 0 $color-primary-light;
+      margin: 1rem;
+      height: auto;
+      position: relative;
+      @include respond(tab-port) {
+        grid-template-rows: auto auto;
+        height: auto;
+        display: block;
+      }
+
+      &-3 {
+        margin-bottom: 6rem;
+      }
+
+      &-heading {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $color-black;
+        text-align: left;
+        margin: 1rem 0 0 1.5rem;
+      }
+
+      &-discription {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-black;
+        text-align: left;
+        margin-left: 1.5rem;
+        height: 55%;
+      }
+
+      &-project {
+        height: auto;
+        position: relative;
+
+        img {
+          max-width: 40rem;
+          box-shadow: 0 2px 2px 0 $color-primary, 0 2px 2px 0 $color-primary;
+          -webkit-box-shadow: 0 2px 2px 0 $color-primary,
+            0 2px 2px 0 $color-primary;
+          display: block;
+          float: right;
+          height: auto;
+          margin: 2rem;
+          @include respond(tab-port) {
+            max-width: 100%;
+            margin: auto;
+          }
+
+          @include respond(phone) {
+            max-width: 100%;
+            margin: auto;
+          }
+        }
+      }
+
+      .btn-project {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        float: left;
+        display: grid;
+        grid-template-columns: auto auto;
+
+        &_link:link,
+        &_link:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: $color-primary-medium;
+          color: $color-black;
+          padding: 2px 2rem;
+          border-radius: 2.1rem;
+          margin-left: 1.5rem;
+          display: inline-block;
+        }
+
+        &_link:hover {
+          transform: translateY(-2px);
+          -webkit-transform: translateY(-2px);
+        }
+
+        &_link:active {
+          transform: translateY(-2px);
+          -webkit-transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+.heading-project {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-gray-dark, $color-gray);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 4rem;
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
+}
+
+.contact-me {
+  background-color: $color-gray;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -19.5vh;
+  text-align: center;
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(
+      50% 30%,
+      100% 0,
+      100% 100%,
+      50% 100%,
+      0 100%,
+      0 0
+    );
+  }
+
+  #footer a {
+    max-width: 70%;
+    font-size: 3rem;
+    color: $color-primary-1;
+  }
+
+  .contact-info {
+    font-size: 1.5rem;
+    color: $color-primary-1;
+  }
+}
