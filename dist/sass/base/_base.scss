@@ -222,7 +222,7 @@ body {
       margin: 1rem;
       padding: 0;
       @include respond(tab-port) {
-        margin: 4px;
+        margin: 0;
       }
 
       &:hover {
@@ -281,10 +281,6 @@ body {
     $color-primary-light
   );
 
-  @include respond(phone){
-    margin-top: -29vh;
-    margin-top: -17vh;
-  }
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
@@ -408,6 +404,10 @@ body {
   background-clip: text;
   color: transparent;
   margin-top: 4rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
 
   @include respond(tab-port) {
     margin-top: 4rem;
