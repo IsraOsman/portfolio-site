@@ -50,7 +50,7 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 4px;
     line-height: 7rem;
     margin-top: 10rem; }
@@ -59,7 +59,7 @@ body {
         font-size: 5rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
   .heading-primary--sub {
     padding-top: 0;
     display: block;
@@ -130,10 +130,7 @@ body {
     margin-top: 1rem; }
     @media (max-width: 56.25em) {
       .skills_grid {
-        padding: 0 8rem; } }
-    @media (max-width: 37.5em) {
-      .skills_grid {
-        padding: 1rem 5rem; } }
+        padding: 0 5rem; } }
     .skills_grid-item {
       background-color: #881d46b6;
       box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
@@ -171,7 +168,8 @@ body {
       margin-top: 4rem; } }
   @media (max-width: 37.5em) {
     .heading_secondary {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      margin-top: 0; } }
 
 .projects {
   padding: 12rem 0;
@@ -189,6 +187,9 @@ body {
     grid-template-rows: auto auto auto;
     padding: 0 10rem;
     margin-top: 1rem; }
+    @media (max-width: 37.5em) {
+      .projects_grid {
+        padding: 0 5rem; } }
     .projects_grid-item {
       border-radius: 2px;
       display: grid;
@@ -271,7 +272,7 @@ body {
   margin-top: 4rem; }
   @media (max-width: 56.25em) {
     .heading-project {
-      margin-top: 6rem; } }
+      margin-top: 4rem; } }
 
 .contact-me {
   background-color: #f1e9e9;
