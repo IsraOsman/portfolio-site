@@ -31,6 +31,13 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      height: 80vh; }
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        .header {
+          -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 65vh, 50% 100%, 0% 65vh, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 65vh, 50% 100%, 0% 65vh, 0 0); } } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 78vh, 50% 100%, 0% 78vh, 0 0);
@@ -50,7 +57,7 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 4px;
     line-height: 7rem;
     margin-top: 10rem; }
@@ -59,7 +66,7 @@ body {
         font-size: 5rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
   .heading-primary--sub {
     padding-top: 0;
     display: block;
@@ -130,10 +137,8 @@ body {
     margin-top: 1rem; }
     @media (max-width: 56.25em) {
       .skills_grid {
-        padding: 0 8rem; } }
-    @media (max-width: 37.5em) {
-      .skills_grid {
-        padding: 1rem 5rem; } }
+        padding: 0 5rem;
+        margin: auto; } }
     .skills_grid-item {
       background-color: #881d46b6;
       box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
@@ -143,7 +148,7 @@ body {
       padding: 0; }
       @media (max-width: 56.25em) {
         .skills_grid-item {
-          margin: 4px; } }
+          margin: 0; } }
       .skills_grid-item:hover {
         transform: translateY(-2px);
         -webkit-transform: translateY(-2px); }
@@ -165,13 +170,13 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
-  @media (max-width: 56.25em) {
-    .heading_secondary {
-      font-size: 3rem;
-      margin-top: 4rem; } }
   @media (max-width: 37.5em) {
     .heading_secondary {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      margin-top: -5rem; } }
+  @media (max-width: 56.25em) {
+    .heading_secondary {
+      font-size: 3rem; } }
 
 .projects {
   padding: 12rem 0;
@@ -189,6 +194,9 @@ body {
     grid-template-rows: auto auto auto;
     padding: 0 10rem;
     margin-top: 1rem; }
+    @media (max-width: 37.5em) {
+      .projects_grid {
+        padding: 0 2rem; } }
     .projects_grid-item {
       border-radius: 2px;
       display: grid;
@@ -269,9 +277,12 @@ body {
   background-clip: text;
   color: transparent;
   margin-top: 4rem; }
+  @media (max-width: 37.5em) {
+    .heading-project {
+      margin-top: 0; } }
   @media (max-width: 56.25em) {
     .heading-project {
-      margin-top: 6rem; } }
+      margin-top: 4rem; } }
 
 .contact-me {
   background-color: #f1e9e9;
