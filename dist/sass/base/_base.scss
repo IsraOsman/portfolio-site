@@ -177,6 +177,11 @@ body {
   position: relative;
   z-index: 2;
 
+  @include respond(phone){
+    margin-top: -30vh;
+  }
+  
+
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     clip-path: polygon(50% 20vh, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
     -webkit-clip-path: polygon(
@@ -280,6 +285,10 @@ body {
     $color-primary,
     $color-primary-light
   );
+
+  @include respond(phone){
+    margin-top: -29vh;
+  }
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);

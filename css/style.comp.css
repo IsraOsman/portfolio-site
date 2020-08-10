@@ -137,7 +137,8 @@ body {
     margin-top: 1rem; }
     @media (max-width: 56.25em) {
       .skills_grid {
-        padding: 0 5rem; } }
+        padding: 0 5rem;
+        margin: auto; } }
     .skills_grid-item {
       background-color: #881d46b6;
       box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
