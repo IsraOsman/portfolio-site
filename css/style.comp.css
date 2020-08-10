@@ -185,9 +185,6 @@ body {
   position: relative;
   z-index: 1;
   background-image: linear-gradient(to right bottom, #9e2855c7, #a07990c4); }
-  @media (max-width: 37.5em) {
-    .projects {
-      margin-top: -29vh; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .projects {
       clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
@@ -280,6 +277,9 @@ body {
   background-clip: text;
   color: transparent;
   margin-top: 4rem; }
+  @media (max-width: 37.5em) {
+    .heading-project {
+      margin-top: 0; } }
   @media (max-width: 56.25em) {
     .heading-project {
       margin-top: 4rem; } }
