@@ -222,7 +222,7 @@ body {
       margin: 1rem;
       padding: 0;
       @include respond(tab-port) {
-        margin: 0;
+        margin: 4px;
       }
 
       &:hover {
