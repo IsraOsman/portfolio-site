@@ -45,6 +45,20 @@ body {
   background-size: cover;
   background-position: top;
 
+  @include respond(phone) {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(
+        50% 0%,
+        100% 0,
+        100% 65vh,
+        50% 100%,
+        0% 65vh,
+        0 0
+      );
+      clip-path: polygon(50% 0%, 100% 0, 100% 65vh, 50% 100%, 0% 65vh, 0 0);
+    }
+  }
+
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(
       50% 0%,
@@ -232,15 +246,16 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  @include respond(phone) {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
   @include respond(tab-port) {
     font-size: 3rem;
     margin-top: 4rem;
   }
 
-  @include respond(phone) {
-    font-size: 2.5rem;
-    margin-top: 0;
-  }
   background-image: linear-gradient(
     to right,
     $color-primary,
