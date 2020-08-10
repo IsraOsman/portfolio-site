@@ -194,13 +194,10 @@ body {
     padding: 0 20rem;
     margin-top: 1rem;
     @include respond(tab-port) {
-      padding: 0 8rem;
+      padding: 0 5rem;
     }
 
-    @include respond(phone) {
-      padding: 1rem 5rem;
-    }
-
+  
     &-item {
       background-color: $color-primary-1;
       box-shadow: 0 2px 2px 0 $color-primary, 0 2px 2px 0 $color-primary;
@@ -242,6 +239,7 @@ body {
 
   @include respond(phone) {
     font-size: 2.5rem;
+    margin-top: 0;
   }
   background-image: linear-gradient(
     to right,
@@ -277,6 +275,9 @@ body {
     grid-template-rows: auto auto auto;
     padding: 0 10rem;
     margin-top: 1rem;
+    @include respond(phone){
+      padding: 0 5rem;
+    }
 
     &-item {
       border-radius: 2px;
