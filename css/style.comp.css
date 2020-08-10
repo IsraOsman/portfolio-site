@@ -173,7 +173,7 @@ body {
   @media (max-width: 37.5em) {
     .heading_secondary {
       font-size: 2.5rem;
-      margin-top: 0; } }
+      margin-top: -5rem; } }
   @media (max-width: 56.25em) {
     .heading_secondary {
       font-size: 3rem; } }
@@ -187,7 +187,8 @@ body {
   background-image: linear-gradient(to right bottom, #9e2855c7, #a07990c4); }
   @media (max-width: 37.5em) {
     .projects {
-      margin-top: -29vh; } }
+      margin-top: -29vh;
+      margin-top: -17vh; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .projects {
       clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
