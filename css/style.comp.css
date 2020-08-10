@@ -121,6 +121,9 @@ body {
   text-align: center;
   position: relative;
   z-index: 2; }
+  @media (max-width: 37.5em) {
+    .skills {
+      margin-top: -30vh; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .skills {
       clip-path: polygon(50% 20vh, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
@@ -186,6 +189,9 @@ body {
   position: relative;
   z-index: 1;
   background-image: linear-gradient(to right bottom, #9e2855c7, #a07990c4); }
+  @media (max-width: 37.5em) {
+    .projects {
+      margin-top: -29vh; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .projects {
       clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
