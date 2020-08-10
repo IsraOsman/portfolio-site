@@ -232,15 +232,16 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  @include respond(phone) {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  
   @include respond(tab-port) {
     font-size: 3rem;
     margin-top: 4rem;
   }
 
-  @include respond(phone) {
-    font-size: 2.5rem;
-    margin-top: 0;
-  }
   background-image: linear-gradient(
     to right,
     $color-primary,
