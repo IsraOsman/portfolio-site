@@ -45,7 +45,7 @@ body {
   background-size: cover;
   background-position: top;
 
-  @include respond(phone) {
+  @include respond(min-phone) {
     height: 80vh;
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       -webkit-clip-path: polygon(
@@ -128,7 +128,7 @@ body {
     max-width: 100%;
 
     @include respond(phone){
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -233,7 +233,7 @@ body {
         margin: .8rem;
       }
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         margin: 4px;
       }
 
@@ -266,6 +266,14 @@ body {
     margin-top: 3.5rem;
   }
 
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+
+  @include respond(min-phone) {
+    margin-top: 1rem;
+  }
+  
   background-image: linear-gradient(
     to right,
     $color-primary,
@@ -418,12 +426,13 @@ body {
   color: transparent;
   margin-top: 4rem;
 
-  @include respond(phone) {
-    margin-top: 0;
-  }
 
   @include respond(tab-port) {
     margin-top: 5.2rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 2rem;
   }
 }
 
