@@ -1,6 +1,12 @@
 //Midia query manger
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == mini-phone {
+    @media (max-width: 18em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
       @content;
@@ -8,7 +14,7 @@
   }
 
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 57em) {
       @content;
     }
   }

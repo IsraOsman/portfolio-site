@@ -9,7 +9,7 @@
   },
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "watch:sass": "node-sass dist/sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass dist/sass/main.scss dist/css/style.css -w",
     "compile:sass": "node-sass dist/sass/main.scss dist/css/style.comp.css",
     "concat:css": "concat -o dist/css/style.concat.css dist/css/icon-font.css dist/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.concat.css -o dist/css/style.prefix.css",

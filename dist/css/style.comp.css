@@ -27,7 +27,7 @@ body {
 
 .header {
   height: 96vh;
-  background-image: linear-gradient(to right bottom, #9e2855c7, #a07990c4), url(../img/header.jpg);
+  background-image: linear-gradient(to right bottom, red, #a07990c4), url(../img/header.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -87,7 +87,7 @@ body {
     max-width: 100%; }
   .heading-primary-btn {
     text-decoration: none;
-    color: #9e2855c7;
+    color: red;
     font-size: 2rem;
     background-color: #f1e9e9;
     font-weight: 400;
@@ -141,7 +141,7 @@ body {
         margin: auto; } }
     .skills_grid-item {
       background-color: #881d46b6;
-      box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
+      box-shadow: 0 2px 2px 0 red, 0 2px 2px 0 red;
       color: #f1e9e9;
       border-radius: 2px;
       margin: 1rem;
@@ -164,7 +164,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #9e2855c7, #a07990c4);
+  background-image: linear-gradient(to right, red, #a07990c4);
   margin-top: 2.5rem;
   display: inline-block;
   background-clip: text;
@@ -184,7 +184,7 @@ body {
   margin-top: -23vh;
   position: relative;
   z-index: 1;
-  background-image: linear-gradient(to right bottom, #9e2855c7, #a07990c4); }
+  background-image: linear-gradient(to right bottom, red, #a07990c4); }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .projects {
       clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
@@ -232,8 +232,8 @@ body {
         position: relative; }
         .projects_grid-item-project img {
           max-width: 40rem;
-          box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
-          -webkit-box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
+          box-shadow: 0 2px 2px 0 red, 0 2px 2px 0 red;
+          -webkit-box-shadow: 0 2px 2px 0 red, 0 2px 2px 0 red;
           display: block;
           float: right;
           height: auto;
