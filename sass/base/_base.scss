@@ -96,6 +96,7 @@ body {
     letter-spacing: 10px;
     line-height: 7rem;
     margin-top: 10rem;
+    word-spacing: 40px;
     @include respond(tab-port) {
       font-size: 5rem;
     }
