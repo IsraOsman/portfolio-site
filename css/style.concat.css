@@ -625,7 +625,7 @@ body {
       margin-top: 3.5rem; } }
   @media (max-width: 37.5em) {
     .heading_secondary {
-      margin-top: 4rem; } }
+      margin-top: 5rem; } }
 
 .projects {
   padding: 12rem 0;
@@ -732,12 +732,12 @@ body {
   background-clip: text;
   color: transparent;
   margin-top: 4rem; }
-  @media (max-width: 57em) {
-    .heading-project {
-      margin-top: 5.2rem; } }
   @media (max-width: 37.5em) {
     .heading-project {
       margin-top: 4rem; } }
+  @media (max-width: 57em) {
+    .heading-project {
+      margin-top: 5.2rem; } }
 
 .contact-me {
   background-color: #f1e9e9;
