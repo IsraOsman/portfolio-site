@@ -505,7 +505,7 @@ body {
         font-size: 5rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 600;
         letter-spacing: 2.5px; } }
   .heading-primary--sub {
