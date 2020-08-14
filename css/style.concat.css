@@ -624,7 +624,7 @@ body {
       margin-top: 3.5rem; } }
   @media (max-width: 37.5em) {
     .heading_secondary {
-      margin-top: 2rem; } }
+      margin-top: 0; } }
 
 .projects {
   padding: 12rem 0;

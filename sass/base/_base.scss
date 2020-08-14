@@ -268,11 +268,11 @@ body {
   }
 
   @include respond(phone) {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   @include respond(min-phone) {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   
   background-image: linear-gradient(
