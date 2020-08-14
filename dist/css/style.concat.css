@@ -737,7 +737,7 @@ body {
       margin-top: 5.2rem; } }
   @media (max-width: 37.5em) {
     .heading-project {
-      margin-top: 2rem; } }
+      margin-top: 0; } }
 
 .contact-me {
   background-color: #f1e9e9;
