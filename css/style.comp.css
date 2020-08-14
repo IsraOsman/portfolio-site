@@ -80,7 +80,8 @@ body {
     margin: auto;
     display: block;
     text-align: center;
-    max-width: 100%; }
+    max-width: 100%;
+    word-spacing: 0; }
     @media (max-width: 37.5em) {
       .heading-primary_text {
         font-size: 1.8rem; } }
