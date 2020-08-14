@@ -119,9 +119,6 @@ body {
   text-align: center;
   position: relative;
   z-index: 2; }
-  @media (max-width: 37.5em) {
-    .skills {
-      margin-top: -22vh; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .skills {
       clip-path: polygon(50% 20vh, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
