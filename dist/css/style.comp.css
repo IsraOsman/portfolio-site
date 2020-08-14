@@ -51,10 +51,9 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 500;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     line-height: 7rem;
-    margin-top: 10rem;
-    word-spacing: 40px; }
+    margin-top: 10rem; }
     @media (max-width: 57em) {
       .heading-primary--main {
         font-size: 5rem; } }
@@ -62,7 +61,7 @@ body {
       .heading-primary--main {
         font-size: 4rem;
         font-weight: 500;
-        letter-spacing: 5px; } }
+        letter-spacing: 4px; } }
   .heading-primary--sub {
     padding-top: 0;
     display: block;
@@ -180,7 +179,7 @@ body {
       margin-top: 3.5rem; } }
   @media (max-width: 37.5em) {
     .heading_secondary {
-      margin-top: 5rem; } }
+      margin-top: 4rem; } }
 
 .projects {
   padding: 12rem 0;
@@ -289,7 +288,7 @@ body {
   margin-top: 4rem; }
   @media (max-width: 37.5em) {
     .heading-project {
-      margin-top: 4rem; } }
+      margin-top: 3rem; } }
   @media (max-width: 57em) {
     .heading-project {
       margin-top: 5.2rem; } }
