@@ -97,12 +97,14 @@ body {
     margin-top: 10rem;
     @include respond(tab-port) {
       font-size: 5rem;
+      letter-spacing: 5px;
     }
 
     @include respond(phone) {
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: 500;
       letter-spacing: 3px;
+      word-spacing: 0em;
     }
   }
 
@@ -111,12 +113,9 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center;
-    
-    @include respond(tab-port) {
-      font-size: 2.5rem;
-    }
+ 
   }
 
   &_text {
@@ -128,9 +127,6 @@ body {
     text-align: center;
     max-width: 100%;
 
-    @include respond(phone){
-      font-size: 2rem;
-    }
   }
 
   &-btn {
