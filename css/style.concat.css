@@ -512,7 +512,7 @@ body {
       .heading-primary--main {
         font-size: 4rem;
         font-weight: 500;
-        letter-spacing: 4px; } }
+        letter-spacing: 3px; } }
   .heading-primary--sub {
     padding-top: 0;
     display: block;
@@ -522,7 +522,7 @@ body {
     text-align: center; }
     @media (max-width: 57em) {
       .heading-primary--sub {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
   .heading-primary_text {
     font-size: 2.5rem;
     text-transform: none;
@@ -533,7 +533,7 @@ body {
     max-width: 100%; }
     @media (max-width: 37.5em) {
       .heading-primary_text {
-        font-size: 1.8rem; } }
+        font-size: 2rem; } }
   .heading-primary-btn {
     text-decoration: none;
     color: #9e2855c7;
