@@ -93,6 +93,8 @@ body {
     @include respond(phone) {
       font-size: 4.5rem;
       font-weight: 500;
+      letter-spacing: 2px;
+
     }
   }
 
