@@ -49,8 +49,8 @@ body {
         position: absolute;
         top: 20%;
         left: 20%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%); } }
+        transform: translate(-12%, -12%);
+        -webkit-transform: translate(-12%, -12%); } }
 
 .heading-primary {
   color: #ffffff;
@@ -70,9 +70,9 @@ body {
         letter-spacing: 5px; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 4.5rem;
         font-weight: 500;
-        letter-spacing: 2px; } }
+        letter-spacing: 2.2px;
+        margin-top: 0; } }
   .heading-primary--sub {
     padding-top: 0;
     display: block;
