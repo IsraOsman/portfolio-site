@@ -477,6 +477,9 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(50% 0%, 100% 0, 100% 85vh, 50% 100%, 0% 85vh, 0 0); } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 78vh, 50% 100%, 0% 78vh, 0 0);
@@ -487,6 +490,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%); }
+    @media (max-width: 37.5em) {
+      .header_text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%); } }
 
 .heading-primary {
   color: #ffffff;
@@ -502,22 +512,20 @@ body {
     margin-top: 10rem; }
     @media (max-width: 57em) {
       .heading-primary--main {
-        font-size: 5rem; } }
+        font-size: 5rem;
+        letter-spacing: 5px; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 4rem;
+        font-size: 4.5rem;
         font-weight: 500;
-        letter-spacing: 4px; } }
+        letter-spacing: 2px; } }
   .heading-primary--sub {
     padding-top: 0;
     display: block;
     font-size: 2.5rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center; }
-    @media (max-width: 57em) {
-      .heading-primary--sub {
-        font-size: 2rem; } }
   .heading-primary_text {
     font-size: 2.5rem;
     text-transform: none;
@@ -526,9 +534,6 @@ body {
     display: block;
     text-align: center;
     max-width: 100%; }
-    @media (max-width: 37.5em) {
-      .heading-primary_text {
-        font-size: 1.8rem; } }
   .heading-primary-btn {
     text-decoration: none;
     color: #9e2855c7;
@@ -584,7 +589,7 @@ body {
         padding: 0 15rem; } }
     @media (max-width: 37.5em) {
       .skills_grid {
-        padding: 0 2rem; } }
+        padding: 0 2.5rem; } }
     .skills_grid-item {
       background-color: #881d46b6;
       box-shadow: 0 2px 2px 0 #9e2855c7, 0 2px 2px 0 #9e2855c7;
@@ -625,7 +630,7 @@ body {
       margin-top: 3.5rem; } }
   @media (max-width: 37.5em) {
     .heading_secondary {
-      margin-top: 4.5rem; } }
+      margin-top: 5.2rem; } }
 
 .projects {
   padding: 12rem 0;
