@@ -73,7 +73,7 @@ body {
     @include respond(phone){
       position: absolute;
       top: 10%;
-      left: 20%;
+      left: 15%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
     }
