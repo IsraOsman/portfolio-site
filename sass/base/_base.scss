@@ -46,7 +46,9 @@ body {
   background-position: top;
 
   @include respond(phone) {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){  
       clip-path: polygon(50% 0%, 100% 0, 100% 85vh, 50% 100%, 0% 85vh, 0 0);
+    }
   }
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
