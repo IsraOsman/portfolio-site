@@ -101,6 +101,8 @@ body {
     @include respond(phone) {
       font-weight: 500;
       letter-spacing: 2.3px;
+      margin-top: 6rem;
+
     }
   }
 
