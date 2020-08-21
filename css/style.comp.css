@@ -49,8 +49,7 @@ body {
         position: absolute;
         top: 20%;
         left: 20%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%); } }
+        transform: none; } }
 
 .heading-primary {
   color: #ffffff;
