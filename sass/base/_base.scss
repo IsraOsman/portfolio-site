@@ -69,6 +69,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+
+    @include respond(phone){
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -253,7 +261,7 @@ body {
   }
 
   @include respond(phone) {
-    margin-top: 5rem;
+    margin-top: 5.2rem;
   }
   
   background-image: linear-gradient(
