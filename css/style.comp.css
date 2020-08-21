@@ -47,8 +47,8 @@ body {
     @media (max-width: 37.5em) {
       .header_text-box {
         position: absolute;
-        top: 10%;
-        left: 15%;
+        top: 6%;
+        left: 10%;
         transform: none; } }
 
 .heading-primary {
